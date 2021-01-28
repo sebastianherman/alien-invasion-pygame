@@ -1,0 +1,8 @@
+{
+    "python.pythonPath": "/home/sebastian/Desktop/Python Crash Course/alien_invasion/bin/python3.9",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.linting.pylintArgs": [
+        "--extension-pkg-whitelist=pygame",
+    ],
+}
