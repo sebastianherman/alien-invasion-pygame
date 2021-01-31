@@ -29,7 +29,8 @@ class Scoreboard:
         """Turn the score into a rendered image"""
         rounded_score = round(self.stats.score, -1)
         score_str = "{:,}".format(rounded_score)
-        self.score_image = self.font.render(score_str, True, self.text_color, self.settings.bg_color)
+        self.score_image = self.font.render(score_str, True, self.text_color,
+                                            self.settings.bg_color)
 
         # display the score at the top right of the screen
         self.score_rect = self.score_image.get_rect()
@@ -41,7 +42,9 @@ class Scoreboard:
         high_score = round(self.stats.high_score, -1)
         high_score_str = "{:,}".format(high_score)
         high_score_str = "HS: " + high_score_str
-        self.high_score_image = self.font.render(high_score_str, True, self.text_color, self.settings.bg_color)
+        self.high_score_image = self.font.render(high_score_str, True,
+                                                 self.text_color,
+                                                 self.settings.bg_color)
 
         # display the score at the top right of the screen
         self.high_score_rect = self.high_score_image.get_rect()
@@ -52,7 +55,8 @@ class Scoreboard:
         """Turn the level into a rendered image"""
         level_str = str(self.stats.level)
         level_str = "Lvl: " + level_str
-        self.level_image = self.font.render(level_str, True, self.text_color, self.settings.bg_color)
+        self.level_image = self.font.render(level_str, True, self.text_color,
+                                            self.settings.bg_color)
 
         # position the level below the score
         self.level_rect = self.level_image.get_rect()
